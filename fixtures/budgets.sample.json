@@ -1,0 +1,1 @@
+{"global":{"hard":100.0,"soft":25.0},"tenants":{"acme":{"hard":20.0,"soft":5.0},"globex":{"hard":30.0,"soft":10.0}}}
