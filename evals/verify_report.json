@@ -1,0 +1,27 @@
+{
+  "suite": "llm-cost-sidecar golden verification",
+  "passed": 4,
+  "total": 4,
+  "checks": [
+    {
+      "name": "determinism",
+      "pass": true,
+      "detail": "seed=7 x2 identical (75 events), seed=8 differs"
+    },
+    {
+      "name": "alert_scenario",
+      "pass": true,
+      "detail": "single $2.50 call fired soft then hard; no re-fire on later events"
+    },
+    {
+      "name": "pricing_sanity",
+      "pass": true,
+      "detail": "6 models sane; fallback flagged; SAMPLE disclaimer present"
+    },
+    {
+      "name": "reconciliation",
+      "pass": true,
+      "detail": "tenant/model/day rollups all reconcile to $508.1501"
+    }
+  ]
+}
